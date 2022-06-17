@@ -8,45 +8,63 @@
 </head>
 <body>
 	<nav id="navbar-example2" class="navbar bg-light px-3">
-		<a href="home" class="navbar-brand"><img src="imagens/2-home-11.png"> LOJA</a>
+		<a style="color: inherit" href="home" class="navbar-brand"><img
+			src="imagens/2-home-11.png"> LOJA</a>
 		<ul class="nav nav-pills">
-		  <li class="nav-item">
-			<a class="nav-link" href="read"><img src="imagens/25-trolly.png"alt="carrinho de loja">  Produtos</a>
-		  </li>
+			<li class="nav-item"><a style="color: inherit" class="nav-link"
+				href="read"><img src="imagens/25-trolly.png"
+					alt="carrinho de loja"> Produtos</a></li>
 		</ul>
-	  </nav>
+	</nav>
 	<h1 class="text-center">Cadastrar</h1>
-	<form name="frmCadastro" action="insert">
-		<div class="col-auto">
-		<table>
-			<tr>
-				<td>Código*</td>
-				<td><input type="text" class="form-control" name="codigo" placeholder="Código de Barras"></td>
-			</tr>
-			<tr>
-				<td>Nome*</td>
-				<td><input type="text" class="form-control" name="nome" placeholder="Nome"></td>
-			</tr>
-			<tr>
-				<td>Categoria</td>
-				<td><input type="text" class="form-control" name="categoria" placeholder="Categoria"></td>
-			</tr>
-			<tr>
-				<td>Quantidade*</td>
-				<td><input type="text" class="form-control" name="quantidade" placeholder="Quantidade"></td>
-			</tr>
-			<tr>
-				<td>Preço*</td>
-				<td><input type="text" class="form-control" name="preco" placeholder="Preço"></td>
-			</tr>
-		</table>
+	<div class="container px-4">
+		<div class="row gx-5">
+			<div class="col">
+				<img src="imagens/Group-1.png" class="rounded float-end" alt="...">
+				<form name="frmCadastro" action="insert">
+					<div class="col-auto">
+						<table>
+							<tr>
+								<td>Código*</td>
+								<td><input type="text" class="form-control" name="codigo"
+									placeholder="Código de Barras"></td>
+							</tr>
+							<tr>
+								<td>Nome*</td>
+								<td><input type="text" class="form-control" name="nome"
+									placeholder="Nome"></td>
+							</tr>
+							<tr>
+								<td>Categoria</td>
+								<td><input type="text" class="form-control"
+									name="categoria" placeholder="Categoria"></td>
+							</tr>
+							<tr>
+								<td>Quantidade*</td>
+								<td><input type="text" class="form-control"
+									name="quantidade" placeholder="Quantidade"></td>
+							</tr>
+							<tr>
+								<td>Preço*</td>
+								<td><input type="text" class="form-control" name="preco"
+									placeholder="Preço"></td>
+							</tr>
+						</table>
+					</div>
+					<p></p>
+					<div class="hstack gap-3">
+						<div class="bg-light border">
+							<input class="btn btn-dark" type="button" value="Salvar"
+								onclick="validar()">
+						</div>
+						<div class="bg-light border">
+							<input class="btn btn-dark" type="reset" value="Limpa">
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-		<p></p>
-		<div class="hstack gap-3">
-		<div class="bg-light border"><input type="button" value="Salvar" onclick="validar()"></div>
-		<div class="bg-light border"><input type="reset" value="Limpa"></div>
 	</div>
-	</form>
 	<script src="scripts/validador.js"></script>
 	<script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
