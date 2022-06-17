@@ -48,7 +48,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("produt
 					<td><%=lista.get(i).getQuantidade() %></td>
 					<td><%=lista.get(i).getPreco() %></td>
 					<td>
-						<a href="javascript: confirmar(<%=lista.get(i).getId() %>)">Excluir</a>
+						<a href="javascript: confirmar(<%=lista.get(i).getId() %>)"><img src="imagens/61-trash.png"></a>
 						<a href="select?id=<%=lista.get(i).getId()%>">Editar</a>
 					</td>
 				</tr>
