@@ -3,38 +3,51 @@
 <head>
 <meta charset="utf-8">
 <title>Cadastro</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-	<h1>Cadastrar</h1>
+	<nav id="navbar-example2" class="navbar bg-light px-3">
+		<a href="home" class="navbar-brand"><img src="imagens/2-home-11.png"> LOJA</a>
+		<ul class="nav nav-pills">
+		  <li class="nav-item">
+			<a class="nav-link" href="read"><img src="imagens/25-trolly.png"alt="carrinho de loja">  Produtos</a>
+		  </li>
+		</ul>
+	  </nav>
+	<h1 class="text-center">Cadastrar</h1>
 	<form name="frmCadastro" action="insert">
+		<div class="col-auto">
 		<table>
 			<tr>
 				<td>Código*</td>
-				<td><input type="text" name="codigo" placeholder="Código de Barras"></td>
+				<td><input type="text" class="form-control" name="codigo" placeholder="Código de Barras"></td>
 			</tr>
 			<tr>
 				<td>Nome*</td>
-				<td><input type="text" name="nome" placeholder="Nome"></td>
+				<td><input type="text" class="form-control" name="nome" placeholder="Nome"></td>
 			</tr>
 			<tr>
 				<td>Categoria</td>
-				<td><input type="text" name="categoria" placeholder="Categoria"></td>
+				<td><input type="text" class="form-control" name="categoria" placeholder="Categoria"></td>
 			</tr>
 			<tr>
 				<td>Quantidade*</td>
-				<td><input type="text" name="quantidade" placeholder="Quantidade"></td>
+				<td><input type="text" class="form-control" name="quantidade" placeholder="Quantidade"></td>
 			</tr>
 			<tr>
 				<td>Preço*</td>
-				<td><input type="text" name="preco" placeholder="Preço"></td>
+				<td><input type="text" class="form-control" name="preco" placeholder="Preço"></td>
 			</tr>
 		</table>
-		<input type="button" value="Salvar" onclick="validar()">
-		<input type="reset" value="Limpa">
+		</div>
+		<p></p>
+		<div class="hstack gap-3">
+		<div class="bg-light border"><input type="button" value="Salvar" onclick="validar()"></div>
+		<div class="bg-light border"><input type="reset" value="Limpa"></div>
+	</div>
 	</form>
-	<p>
-	<a href="home">Sair</a>
-	
 	<script src="scripts/validador.js"></script>
+	<script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>

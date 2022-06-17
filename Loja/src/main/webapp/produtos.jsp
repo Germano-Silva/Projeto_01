@@ -14,10 +14,19 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("produt
 <head>
 <meta charset="utf-8">
 <title>Produtos</title>
+<link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-	<h1>Lista de Produtos Cadastrados.</h1>
-	<table>
+	<nav id="navbar-example2" class="navbar bg-light px-3">
+		<a href="create" class="navbar-brand"><img src="imagens/2-home-11.png"> LOJA</a>
+		<ul class="nav nav-pills">
+		  <li class="nav-item">
+			<a class="nav-link" href="create"><img src="imagens/8-note.png"alt="lista"> Cadastrar</a>
+		  </li>
+		</ul>
+	  </nav>
+	<h1 class="text-center">Lista de Produtos Cadastrados.</h1>
+	<table class="table table-striped">
 		<thead>
 			<tr>
 				<th>Nº</th>
@@ -47,9 +56,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("produt
 		</tbody>
 	</table>
 	<p>
-	<a href="create">Cadastrar</a>
-	<p>
-	<a href="home">Sair</a>
 	<script src="scripts/confirmador.js"></script>
+	<script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
