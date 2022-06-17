@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Cadastro</title>
+</head>
+<body>
+	<h1>Cadastrar</h1>
+	<form name="frmCadastro" action="insert">
+		<table>
+			<tr>
+				<td>Código*</td>
+				<td><input type="text" name="codigo" placeholder="Código de Barras"></td>
+			</tr>
+			<tr>
+				<td>Nome*</td>
+				<td><input type="text" name="nome" placeholder="Nome"></td>
+			</tr>
+			<tr>
+				<td>Categoria</td>
+				<td><input type="text" name="categoria" placeholder="Categoria"></td>
+			</tr>
+			<tr>
+				<td>Quantidade*</td>
+				<td><input type="text" name="quantidade" placeholder="Quantidade"></td>
+			</tr>
+			<tr>
+				<td>Preço*</td>
+				<td><input type="text" name="preco" placeholder="Preço"></td>
+			</tr>
+		</table>
+		<input type="button" value="Salvar" onclick="validar()">
+		<input type="reset" value="Limpa">
+	</form>
+	<p>
+	<a href="home">Sair</a>
+	
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
